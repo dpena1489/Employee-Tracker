@@ -1,20 +1,52 @@
-# Employee-Tracker
-Challenge 12 SQL: Employee Tracker
+# Employee Tracker     <a href = "https://opensource.org/licenses/MIT">![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)</a>
 
-GIVEN a command-line application that accepts user input
-WHEN I start the application
-THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
-WHEN I choose to view all departments
-THEN I am presented with a formatted table showing department names and department ids
-WHEN I choose to view all roles
-THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
-WHEN I choose to view all employees
-THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
-WHEN I choose to add a department
-THEN I am prompted to enter the name of the department and that department is added to the database
-WHEN I choose to add a role
-THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
-WHEN I choose to add an employee
-THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
-WHEN I choose to update an employee role
-THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
+  ## Table of Contents
+
+  [Installation](#installation)
+
+  [Usage](#usage)
+
+  [License](#license)
+
+  [Contributing](#contributing)
+
+  [Tests](#tests)
+
+  [Questions](#questions)
+
+  [Walk-through video](#video)
+
+  ## Description
+
+ This is an employee management system.You can view Employees, sorted by Department or manager, add employees, change an employee's, Role/Manager and Add new role.
+
+
+
+  ## Installation <a id="installation"></a>
+
+  To use this application, install node.js and the Inquirer package. To test this application, install Jest.
+
+  ## Usage <a id="usage"></a>
+
+Used to keep track of Employees in a database
+
+  ## License <a id="license"></a>
+
+  This application is covered under an <a href = "https://opensource.org/licenses/MIT">MIT</a> license
+
+  ## Contributing <a id="contributing"></a>
+
+  N/A
+
+  ## Tests <a id="tests"></a>
+
+  The tests for this repository can be found in the test folder.
+  ## Questions <a id="questions"></a>
+
+  Feel free to reach out to me with any additional questions!
+
+  GitHub: <a href="https://github.com/dpena1489"> dpena1489</a>
+
+  ## Walk-through video 
+  
+
