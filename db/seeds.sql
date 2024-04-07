@@ -1,12 +1,12 @@
 \c employee_tracker;
 
-INSERT INTO department (dept_name)
+INSERT INTO department (name)
 VALUES ('Engineering'),
        ('Finance'),
        ('Legal'),
        ('Sales');
 
-INSERT INTO role (title, salary ,dept_id)
+INSERT INTO role (title, salary ,department_id)
 VALUES ('Sales Lead', 100000, 4),
        ('Sales Person', 80000, 4),
        ('Lead Engineer', 150000, 1),

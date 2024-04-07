@@ -1,18 +1,17 @@
 const inquire = require('inquirer')
-const mysql = require('mysql2/promise')
 const {initQ,viewByQ, empQs} = require('./helpers/questions')
-const connection = require('./db/connection')
+const connection = require('./db/connections')
 let eList = []
 let dList = []
 let rList = []
 
-connection.connect((err) =>{
-      if (err) {throw(err)}
-      setEList()
-      setDList()
-      //setRList()
-      whatToDo()
-  })
+// connection.connect((err) =>{
+//       if (err) {throw(err)}
+//       setEList()
+//       setDList()
+//       //setRList()
+//       whatToDo()
+//   })
 
 const setEList = () => {
   eList = []
@@ -60,23 +59,24 @@ const getR = () => {
 
 function whatToDo() {
     inquire.prompt(initQ).then((answers) => {
-        switch (answers.wdywtd) { 
-          case `View All Employees (sort by)`: displayEmployees();
-          break;
-          case 'Add Employee': addEmployee();
-          break;
-          case 'Remove Employee': removeEmployee();
-          break;
-          case 'Update Employee Role': updateRole();
-          break;
-          // case for updating salary: updateSal();
-          case 'Update Employee Manager': updateMgr();
-          break;
-          case 'View Total Utilized Budget By Department': viewBudgetByDept();
-          break;
-          case 'Quit': allDone();
-          break;
-        }  
+      console.log(answers)
+        // switch (answers.wdywtd) { 
+        //   case `View All Employees (sort by)`: displayEmployees();
+        //   break;
+        //   case 'Add Employee': addEmployee();
+        //   break;
+        //   case 'Remove Employee': removeEmployee();
+        //   break;
+        //   case 'Update Employee Role': updateRole();
+        //   break;
+        //   // case for updating salary: updateSal();
+        //   case 'Update Employee Manager': updateMgr();
+        //   break;
+        //   case 'View Total Utilized Budget By Department': viewBudgetByDept();
+        //   break;
+        //   case 'Quit': allDone();
+        //   break;
+        // }  
     })
 }
 
@@ -172,3 +172,5 @@ function allDone() {
     console.log('Quit')
     //process.exit
 }
+
+whatToDo()
