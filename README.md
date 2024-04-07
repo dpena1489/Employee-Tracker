@@ -48,5 +48,8 @@ Used to keep track of Employees in a database
   GitHub: <a href="https://github.com/dpena1489"> dpena1489</a>
 
   ## Walk-through video 
+
   
+  
+[Untitled_ Apr 7, 2024 3_26 PM.webm](https://github.com/dpena1489/Employee-Tracker/assets/150938385/f29ca717-dda7-4427-a370-15c46e656cf9)
 
